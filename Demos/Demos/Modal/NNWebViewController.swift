@@ -100,7 +100,7 @@ class NNWebViewController: NNBaseViewController {
         
         WKWebsiteDataStore.default().httpCookieStore
         
-        
+        return ""
     }
     
 }
@@ -151,7 +151,7 @@ extension NNWebViewController: WKUIDelegate {
             }
             
             
-            navigationAction.request.allHTTPHeaderFields = [:]
+//            navigationAction.request.allHTTPHeaderFields = [:]
             
             print("跳转 cookies ===== \(cookieValue)")
             

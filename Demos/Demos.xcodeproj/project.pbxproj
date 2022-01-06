@@ -18,6 +18,7 @@
 		01DA1AD12783FB5500BC8E28 /* NNWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA1AD02783FB5500BC8E28 /* NNWebViewController.swift */; };
 		01DA1AD32783FC3900BC8E28 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA1AD22783FC3900BC8E28 /* UIView+Extension.swift */; };
 		01DA1AD527843B0700BC8E28 /* WKWebView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA1AD427843B0700BC8E28 /* WKWebView+Extension.swift */; };
+		01DA1AD727852AED00BC8E28 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA1AD627852AED00BC8E28 /* FileManager+Extension.swift */; };
 		472E6FEC078A1BB78DF1D5B3 /* Pods_Demos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D78A23D15358DA42DAAD891 /* Pods_Demos.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,8 @@
 		01DA1AD02783FB5500BC8E28 /* NNWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NNWebViewController.swift; sourceTree = "<group>"; };
 		01DA1AD22783FC3900BC8E28 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		01DA1AD427843B0700BC8E28 /* WKWebView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+Extension.swift"; sourceTree = "<group>"; };
+		01DA1AD627852AED00BC8E28 /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
+		01DA1AF627868F7F00BC8E28 /* Demos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demos-Bridging-Header.h"; sourceTree = "<group>"; };
 		4D78A23D15358DA42DAAD891 /* Pods_Demos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B49B75313838DDB81ADB62D /* Pods-Demos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demos.debug.xcconfig"; path = "Target Support Files/Pods-Demos/Pods-Demos.debug.xcconfig"; sourceTree = "<group>"; };
 		8C89B1CF8154DF3EB25C307D /* Pods-Demos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demos.release.xcconfig"; path = "Target Support Files/Pods-Demos/Pods-Demos.release.xcconfig"; sourceTree = "<group>"; };
@@ -73,14 +76,15 @@
 		01DA1AAD2783F50800BC8E28 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
-				01DA1ACB2783F78100BC8E28 /* Modal */,
-				01DA1AC82783F75400BC8E28 /* Extension */,
-				01DA1AC52783F61300BC8E28 /* Common */,
-				01DA1AC22783F5CC00BC8E28 /* Base */,
+				01DA1AF627868F7F00BC8E28 /* Demos-Bridging-Header.h */,
 				01DA1AAE2783F50800BC8E28 /* AppDelegate.swift */,
 				01DA1AB72783F50900BC8E28 /* Assets.xcassets */,
-				01DA1AB92783F50900BC8E28 /* LaunchScreen.storyboard */,
+				01DA1AC22783F5CC00BC8E28 /* Base */,
+				01DA1AC52783F61300BC8E28 /* Common */,
+				01DA1AC82783F75400BC8E28 /* Extension */,
 				01DA1ABC2783F50900BC8E28 /* Info.plist */,
+				01DA1AB92783F50900BC8E28 /* LaunchScreen.storyboard */,
+				01DA1ACB2783F78100BC8E28 /* Modal */,
 			);
 			path = Demos;
 			sourceTree = "<group>";
@@ -105,6 +109,7 @@
 		01DA1AC82783F75400BC8E28 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				01DA1AD627852AED00BC8E28 /* FileManager+Extension.swift */,
 				01DA1AC92783F76500BC8E28 /* UIImage+Extension.swift */,
 				01DA1AD22783FC3900BC8E28 /* UIView+Extension.swift */,
 				01DA1AD427843B0700BC8E28 /* WKWebView+Extension.swift */,
@@ -257,6 +262,7 @@
 				01DA1AD32783FC3900BC8E28 /* UIView+Extension.swift in Sources */,
 				01DA1AC42783F5EB00BC8E28 /* NNNavigationController.swift in Sources */,
 				01DA1ACD2783F79F00BC8E28 /* NNBaseViewController.swift in Sources */,
+				01DA1AD727852AED00BC8E28 /* FileManager+Extension.swift in Sources */,
 				01DA1AD12783FB5500BC8E28 /* NNWebViewController.swift in Sources */,
 				01DA1AD527843B0700BC8E28 /* WKWebView+Extension.swift in Sources */,
 				01DA1ACA2783F76500BC8E28 /* UIImage+Extension.swift in Sources */,
@@ -418,6 +424,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tenroadshow.Demos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/tenroadshow/Demos/Demos/Demos/Demos-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -447,6 +454,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tenroadshow.Demos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/tenroadshow/Demos/Demos/Demos/Demos-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

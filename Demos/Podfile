@@ -5,6 +5,6 @@ target 'Demos' do
   use_frameworks!
 
 pod 'SnapKit', '~> 5.0.1'
-
+pod 'CropViewController', '~> 2.6.0'
 
 end

@@ -6,6 +6,10 @@
 //
 
 import UIKit
+import CropViewController
+
+
+
 
 class NNHomeViewController: NNBaseViewController {
     
@@ -46,9 +50,13 @@ extension NNHomeViewController: UITableViewDataSource {
 
 extension NNHomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let webController = NNWebViewController()
-        navigationController?.pushViewController(webController, animated: true)
+//        let webController = NNWebViewController()
+//        navigationController?.pushViewController(webController, animated: true)
+        
+        guard let image = UIImage(named: "123") else { return }
+        let cropController = CropViewController(croppingStyle: .default, image: image)
+        present(cropController, animated: true, completion: nil)
+
     }
 }
-
 

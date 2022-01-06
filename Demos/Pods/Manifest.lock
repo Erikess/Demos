@@ -1,16 +1,20 @@
 PODS:
+  - CropViewController (2.6.0)
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
+  - CropViewController (~> 2.6.0)
   - SnapKit (~> 5.0.1)
 
 SPEC REPOS:
   trunk:
+    - CropViewController
     - SnapKit
 
 SPEC CHECKSUMS:
+  CropViewController: 7093b39ec3cb508531b22d35773e06cecd7378d8
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: fc4921ca43e193a6fba1b33d7d4ce485425c2d3a
+PODFILE CHECKSUM: 33f42ae368f859e3b93a4908d22b4c0136d980b2
 
 COCOAPODS: 1.11.2
