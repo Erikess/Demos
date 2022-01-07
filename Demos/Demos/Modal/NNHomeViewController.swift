@@ -7,6 +7,7 @@
 
 import UIKit
 import CropViewController
+import CocoaLumberjack
 
 
 
@@ -31,8 +32,16 @@ class NNHomeViewController: NNBaseViewController {
         
         view.addSubview(tableView)
         
-    }
+        DDLogVerbose("Verbose: 详细")
+        DDLogDebug("Debug")
+        DDLogInfo("Info")
+        DDLogWarn("Warn")
+        DDLogError("Error")
+        
+        
+        DDLogInfo("path = \(DDFileLogger().currentLogFileInfo?.filePath)")
 
+    }
 }
 
 

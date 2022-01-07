@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		014993FD2787D7DF003120DC /* ExceptionCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014993FC2787D7DF003120DC /* ExceptionCommon.swift */; };
+		014993FF2787DF2F003120DC /* NSObject+Exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014993FE2787DF2F003120DC /* NSObject+Exception.swift */; };
+		0149940427882E84003120DC /* NNCollectionFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0149940327882E84003120DC /* NNCollectionFlowLayout.swift */; };
 		01DA1AAF2783F50800BC8E28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA1AAE2783F50800BC8E28 /* AppDelegate.swift */; };
 		01DA1AB82783F50900BC8E28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01DA1AB72783F50900BC8E28 /* Assets.xcassets */; };
 		01DA1ABB2783F50900BC8E28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01DA1AB92783F50900BC8E28 /* LaunchScreen.storyboard */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		014993FC2787D7DF003120DC /* ExceptionCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExceptionCommon.swift; sourceTree = "<group>"; };
+		014993FE2787DF2F003120DC /* NSObject+Exception.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Exception.swift"; sourceTree = "<group>"; };
+		0149940327882E84003120DC /* NNCollectionFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NNCollectionFlowLayout.swift; sourceTree = "<group>"; };
 		01DA1AAB2783F50800BC8E28 /* Demos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01DA1AAE2783F50800BC8E28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01DA1AB72783F50900BC8E28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +61,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		014993FB2787D7C6003120DC /* Exception */ = {
+			isa = PBXGroup;
+			children = (
+				014993FC2787D7DF003120DC /* ExceptionCommon.swift */,
+				014993FE2787DF2F003120DC /* NSObject+Exception.swift */,
+			);
+			path = Exception;
+			sourceTree = "<group>";
+		};
+		014994002787F0FC003120DC /* Log */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
 		01DA1AA22783F50800BC8E28 = {
 			isa = PBXGroup;
 			children = (
@@ -76,8 +98,11 @@
 		01DA1AAD2783F50800BC8E28 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				014994002787F0FC003120DC /* Log */,
+				014993FB2787D7C6003120DC /* Exception */,
 				01DA1AF627868F7F00BC8E28 /* Demos-Bridging-Header.h */,
 				01DA1AAE2783F50800BC8E28 /* AppDelegate.swift */,
+				0149940327882E84003120DC /* NNCollectionFlowLayout.swift */,
 				01DA1AB72783F50900BC8E28 /* Assets.xcassets */,
 				01DA1AC22783F5CC00BC8E28 /* Base */,
 				01DA1AC52783F61300BC8E28 /* Common */,
@@ -259,10 +284,13 @@
 			files = (
 				01DA1AAF2783F50800BC8E28 /* AppDelegate.swift in Sources */,
 				01DA1AC72783F62500BC8E28 /* NNConstant.swift in Sources */,
+				0149940427882E84003120DC /* NNCollectionFlowLayout.swift in Sources */,
 				01DA1AD32783FC3900BC8E28 /* UIView+Extension.swift in Sources */,
 				01DA1AC42783F5EB00BC8E28 /* NNNavigationController.swift in Sources */,
 				01DA1ACD2783F79F00BC8E28 /* NNBaseViewController.swift in Sources */,
+				014993FF2787DF2F003120DC /* NSObject+Exception.swift in Sources */,
 				01DA1AD727852AED00BC8E28 /* FileManager+Extension.swift in Sources */,
+				014993FD2787D7DF003120DC /* ExceptionCommon.swift in Sources */,
 				01DA1AD12783FB5500BC8E28 /* NNWebViewController.swift in Sources */,
 				01DA1AD527843B0700BC8E28 /* WKWebView+Extension.swift in Sources */,
 				01DA1ACA2783F76500BC8E28 /* UIImage+Extension.swift in Sources */,
